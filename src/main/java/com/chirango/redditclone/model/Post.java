@@ -21,11 +21,9 @@ public class Post {
 
   private String postName;
 
-  @Nullable
-  private String url;
+  @Nullable private String url;
 
-  @Lob
-  private String description;
+  @Lob private String description;
   private Integer voteCount;
 
   @ManyToOne(fetch = FetchType.LAZY)
